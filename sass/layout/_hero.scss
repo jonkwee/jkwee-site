@@ -1,0 +1,46 @@
+.hero_container {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &__primary-text {
+        letter-spacing: 1rem;
+        font-size: 6.4rem;
+        margin-bottom: 1.5rem;
+    }
+
+    &__secondary-text {
+        letter-spacing: 0.5rem;
+        font-size: 3.2rem;
+        text-align: center;
+        position: absolute;
+    }
+}
+
+.media-icons {
+    height: 10vh;
+
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 2rem;
+
+    &--group {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &--linkedin,
+    &--github {
+        height: 3rem;
+        width: 3rem;
+
+        margin: 1rem;
+    }
+}
+

@@ -1,0 +1,70 @@
+@keyframes moveInFromLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-5rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes rotate {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, 25px, 0);
+    }
+      
+    10%, 25% {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+      
+    30%, 100% {
+        opacity: 0;
+        transform: translate3d(0, -25px, 0);
+    }
+}
+
+.hero {
+    &__primary-text {
+        animation: moveInFromLeft 0.5s ease-out .5s;
+        animation-fill-mode: backwards;
+    }
+
+    &__secondary-text {
+
+
+        &:nth-of-type(1) {
+            animation: rotate 10.5s 0.5s infinite;
+            animation-fill-mode: backwards;
+        }
+
+        &:nth-of-type(2) {
+            animation: rotate 10.5s 4.1s infinite;
+            animation-fill-mode: backwards;
+        }
+
+        &:nth-of-type(3) {
+            animation: rotate 10.5s 7.7s infinite;
+            animation-fill-mode: backwards;
+        }
+    }
+
+}
+
+.media-icons--group {
+    animation: fadeIn 0.5s ease-out 1.5s;
+    animation-fill-mode: backwards;
+}

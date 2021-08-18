@@ -1,0 +1,12 @@
+.about_container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.about_content {
+    font-size: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
