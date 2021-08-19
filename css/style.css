@@ -1,6 +1,9 @@
 :root {
   --color-light-grey-background: #FDFDFD;
-  --color-primary-text: #000000; }
+  --color-primary-text: #000000;
+  --color-secondary-text: #FDFDFD;
+  --color-dark-grey-background: #2f2f2f;
+  --font-size-large: 6.4rem; }
 
 *,
 *::after,
@@ -50,7 +53,7 @@ body {
   justify-content: center; }
   .hero__primary-text {
     letter-spacing: 1rem;
-    font-size: 6.4rem;
+    font-size: var(--font-size-large);
     margin-bottom: 1.5rem; }
   .hero__secondary-text {
     letter-spacing: 0.5rem;
@@ -71,16 +74,26 @@ body {
     width: 3rem;
     margin: 1rem; }
 
-.about_container {
+.about {
   height: 100vh;
   display: flex;
-  justify-content: center; }
-
-.about_content {
-  font-size: 5rem;
-  display: flex;
   flex-direction: column;
-  justify-content: center; }
+  background-color: var(--color-dark-grey-background);
+  color: var(--color-secondary-text); }
+  .about__header {
+    font-size: var(--font-size-large);
+    display: flex;
+    justify-content: center;
+    margin-top: 6rem; }
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(5rem);
+  transition: opacity 400ms ease-in, transform 300ms ease-in; }
+
+.fade-in.appear {
+  opacity: 1;
+  transform: translateY(0); }
 
 @keyframes moveInFromLeft {
   0% {

@@ -1,12 +1,27 @@
-.about_container {
+.about {
     height: 100vh;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+
+    background-color: var(--color-dark-grey-background);
+    color: var(--color-secondary-text);
+
+    &__header {
+        font-size: var(--font-size-large);
+        display: flex;
+        justify-content: center;
+        margin-top: 6rem;
+    }
 }
 
-.about_content {
-    font-size: 5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.fade-in {
+    opacity: 0;
+    transform: translateY(5rem);
+    transition: opacity 400ms ease-in,
+                transform 300ms ease-in;
+}
+
+.fade-in.appear {
+    opacity: 1;
+    transform: translateY(0);
 }
