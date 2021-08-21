@@ -3,7 +3,8 @@
   --color-primary-text: #000000;
   --color-secondary-text: #FDFDFD;
   --color-dark-grey-background: #2f2f2f;
-  --font-size-large: 6.4rem; }
+  --font-size-large: 6.4rem;
+  --font-size-medium: 3.2rem; }
 
 *,
 *::after,
@@ -85,15 +86,19 @@ body {
     display: flex;
     justify-content: center;
     margin-top: 6rem; }
-
-.fade-in {
-  opacity: 0;
-  transform: translateY(5rem);
-  transition: opacity 400ms ease-in, transform 300ms ease-in; }
-
-.fade-in.appear {
-  opacity: 1;
-  transform: translateY(0); }
+  .about__content {
+    display: flex;
+    margin: 4rem 5rem; }
+  .about__skills {
+    flex: 0 0 50%; }
+    .about__skills--title {
+      font-size: var(--font-size-medium);
+      text-decoration: underline;
+      text-align: center; }
+  .about__hobbies--title {
+    font-size: var(--font-size-medium);
+    text-decoration: underline;
+    text-align: center; }
 
 @keyframes moveInFromLeft {
   0% {
@@ -139,3 +144,12 @@ body {
 .media-icons--group {
   animation: fadeIn 0.5s ease-out 1.5s;
   animation-fill-mode: backwards; }
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(10rem);
+  transition: opacity 400ms ease-in, transform 300ms ease-in; }
+
+.fade-in.appear {
+  opacity: 1;
+  transform: translateY(0); }

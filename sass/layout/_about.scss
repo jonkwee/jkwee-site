@@ -12,16 +12,29 @@
         justify-content: center;
         margin-top: 6rem;
     }
-}
 
-.fade-in {
-    opacity: 0;
-    transform: translateY(5rem);
-    transition: opacity 400ms ease-in,
-                transform 300ms ease-in;
-}
+    &__content {
+        display: flex;
+        margin: 4rem 5rem;
+    }
 
-.fade-in.appear {
-    opacity: 1;
-    transform: translateY(0);
+    &__skills {
+        flex: 0 0 50%;
+
+        &--title {
+            font-size: var(--font-size-medium);
+            text-decoration: underline;
+            text-align: center;
+        }
+    }
+
+    &__hobbies {
+        
+        &--title {
+            font-size: var(--font-size-medium);
+            text-decoration: underline;
+            text-align: center;
+        }
+    }
+
 }
