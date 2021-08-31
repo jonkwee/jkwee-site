@@ -24,6 +24,10 @@ body {
 object {
   pointer-events: none; }
 
+.descriptor--link {
+  text-decoration: underline;
+  cursor: pointer; }
+
 body {
   font-family: 'Julius Sans One', sans-serif;
   color: var(--color-primary-text); }
@@ -42,6 +46,24 @@ body {
       color: var(--color-primary-text);
       text-decoration: none;
       display: block; }
+
+#next-section {
+  border-radius: 100%;
+  border: 2px;
+  background-color: rgba(255, 255, 255, 0);
+  background-size: 100%;
+  position: fixed;
+  z-index: 100;
+  bottom: 24px;
+  left: 50%;
+  opacity: 1; }
+
+#next-section-svg:hover {
+  cursor: pointer;
+  transform: translateY(-5%); }
+
+#next-section-svg:active {
+  transform: translateY(0%); }
 
 .hero_container {
   height: 80vh;
@@ -79,26 +101,14 @@ body {
   height: 100vh;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   background-color: var(--color-dark-grey-background);
   color: var(--color-secondary-text); }
-  .about__header {
-    font-size: var(--font-size-large);
-    display: flex;
-    justify-content: center;
-    margin-top: 6rem; }
   .about__content {
-    display: flex;
-    margin: 4rem 5rem; }
-  .about__skills {
-    flex: 0 0 50%; }
-    .about__skills--title {
-      font-size: var(--font-size-medium);
-      text-decoration: underline;
-      text-align: center; }
-  .about__hobbies--title {
-    font-size: var(--font-size-medium);
-    text-decoration: underline;
-    text-align: center; }
+    margin: 24rem; }
+    .about__content--title {
+      font-size: var(--font-size-large);
+      margin-bottom: 2rem; }
 
 @keyframes moveInFromLeft {
   0% {

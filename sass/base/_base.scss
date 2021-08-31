@@ -19,3 +19,8 @@ body {
 object {
     pointer-events: none;
 }
+
+.descriptor--link {
+    text-decoration: underline;
+    cursor: pointer;
+}

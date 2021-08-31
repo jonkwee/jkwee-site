@@ -1,5 +1,5 @@
 const faders = document.getElementsByClassName("fade-in");
-console.log(faders);
+
 const appearOptions = {
     threshold: 1,
     rootMargin: "0px 0px -200px 0px"

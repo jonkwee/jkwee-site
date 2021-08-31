@@ -2,38 +2,18 @@
     height: 100vh;
     display: flex;
     flex-direction: column;
+    justify-content: center;
 
     background-color: var(--color-dark-grey-background);
     color: var(--color-secondary-text);
 
-    &__header {
-        font-size: var(--font-size-large);
-        display: flex;
-        justify-content: center;
-        margin-top: 6rem;
-    }
-
+    
     &__content {
-        display: flex;
-        margin: 4rem 5rem;
-    }
-
-    &__skills {
-        flex: 0 0 50%;
+        margin: 24rem;
 
         &--title {
-            font-size: var(--font-size-medium);
-            text-decoration: underline;
-            text-align: center;
-        }
-    }
-
-    &__hobbies {
-        
-        &--title {
-            font-size: var(--font-size-medium);
-            text-decoration: underline;
-            text-align: center;
+            font-size: var(--font-size-large);
+            margin-bottom: 2rem;
         }
     }
 
