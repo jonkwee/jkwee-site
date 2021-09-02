@@ -1,4 +1,20 @@
 body {
     font-family: 'Julius Sans One', sans-serif;
-    color: var(--color-primary-text);
+}
+
+.landing_row--word {
+    font-size: var(--text-size-landing);
+    font-weight: bold;
+}
+
+.light-gray {
+    color: var(--color-light-gray-text);
+}
+
+.gray {
+    color: var(--color-medium-gray-text);
+}
+
+.dark-gray {
+    color: var(--color-dark-gray-text);
 }

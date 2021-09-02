@@ -1,0 +1,23 @@
+.landing {
+  background-color: var(--color-dark-background);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+  &_row {
+    display: flex;
+    justify-content: space-evenly;
+
+    &--container {
+      position: relative;
+    }
+
+    &--word {
+      display: inline-block;
+      position: absolute;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+}

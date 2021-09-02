@@ -13,14 +13,5 @@ html {
 
 body {
     box-sizing: border-box;
-    background-color: var(--color-light-grey-background);
 }
 
-object {
-    pointer-events: none;
-}
-
-.descriptor--link {
-    text-decoration: underline;
-    cursor: pointer;
-}

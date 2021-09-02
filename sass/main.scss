@@ -1,14 +1,9 @@
 @import "abstracts/variables";
 
+@import "animations/landing";
+
 @import "base/base";
 @import "base/typography";
 
-@import "components/navigation";
-@import "components/nextsection";
-
-@import "layout/hero";
-@import "layout/about";
-
-@import "animations/hero";
-@import "animations/about";
+@import "layout/landing";
 

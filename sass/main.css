@@ -1,0 +1,73 @@
+:root {
+  --color-light-background: #F2F2F2;
+  --color-medium-background: #919DA4;
+  --color-dark-background: #2F3234;
+  --color-light-gray-text: #D9DBE0;
+  --color-medium-gray-text: #C3CBD1;
+  --color-dark-gray-text: #919DA4;
+  --text-size-landing: 26rem;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Julius Sans One", sans-serif;
+}
+
+.landing_row--word {
+  font-size: var(--text-size-landing);
+  font-weight: bold;
+}
+
+.light-gray {
+  color: var(--color-light-gray-text);
+}
+
+.gray {
+  color: var(--color-medium-gray-text);
+}
+
+.dark-gray {
+  color: var(--color-dark-gray-text);
+}
+
+.landing {
+  background-color: var(--color-dark-background);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.landing_row {
+  display: flex;
+  justify-content: space-evenly;
+}
+.landing_row--container {
+  position: relative;
+}
+.landing_row--word {
+  display: inline-block;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+/*# sourceMappingURL=main.css.map */

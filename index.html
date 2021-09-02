@@ -3,69 +3,69 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet"> 
-        <link rel="stylesheet" href="css/style.css"> 
-        <title>Jonathan Kwee</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto+Mono:wght@700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="sass/main.css">
+        <title>Jonathan Kwee | Software Engineer</title>
     </head>
     <body>
-        <button id="next-section">
-            <svg id="next-section-svg" xmlns="http://www.w3.org/2000/svg" width="54" height="54" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
-            </svg>
-        </button>
-
-        <!--First section-->
-        <nav class="navbar">
-            <ul class="navbar__list">
-                <li class="navbar__list--item">
-                    <a href="#about" class="navbar__list--link">About</a>
-                </li>
-                <li class="navbar__list--item">
-                    <a href="#" class="navbar__list--link">Projects</a>
-                </li>
-            </ul>
-        </nav>
-
-        <section class="hero_container">
-            <div class="hero">
-                <div class="hero__primary-text">Jonathan Kwee</div>
-                <div class="rotating_text">
-                    <span class="hero__secondary-text">Software Engineer</span>
-                    <span class="hero__secondary-text">Crypto Enthusiast</span>
-                    <span class="hero__secondary-text">Ailurophile</span>
+        <section class="landing">
+            <div class="landing_row">
+                <div class="landing_row--container">
+                    <span class="landing_row--word hidden">J</span>
+                    <span class="landing_row--word dark-gray">0</span>
                 </div>
-                
+                <div class="landing_row--container">
+                    <span class="landing_row--word hidden">O</span>
+                    <span class="landing_row--word light-gray">1</span>
+                </div>
+                <div class="landing_row--container">
+                    <span class="landing_row--word hidden">N</span>
+                    <span class="landing_row--word gray">0</span>
+                </div>
+                <div class="landing_row--container">
+                    <span class="landing_row--word hidden">A</span>
+                    <span class="landing_row--word dark-gray">></span>
+                </div>
+            </div>
+            <div class="landing_row">
+                <div class="landing_row--container">
+                    <span class="landing_row--word hidden">T</span>
+                    <span class="landing_row--word gray">1</span>
+                </div>
+                <div class="landing_row--container">
+                    <span class="landing_row--word hidden">H</span>
+                    <span class="landing_row--word dark-gray">1</span>
+                </div>
+                <div class="landing_row--container">
+                    <span class="landing_row--word hidden">A</span>
+                    <span class="landing_row--word dark-gray">0</span>
+                </div>
+                <div class="landing_row--container">
+                    <span class="landing_row--word hidden">N</span>
+                    <span class="landing_row--word gray">1</span>
+                </div>
+            </div>
+            <div class="landing_row">
+                <div class="landing_row--container">
+                    <span class="landing_row--word hidden">K</span>
+                    <span class="landing_row--word gray"><</span>
+                </div>
+                <div class="landing_row--container">
+                    <span class="landing_row--word hidden">W</span>
+                    <span class="landing_row--word gray">0</span>
+                </div>
+                <div class="landing_row--container">
+                    <span class="landing_row--word hidden">E</span>
+                    <span class="landing_row--word light-gray">1</span>
+                </div>
+                <div class="landing_row--container">
+                    <span class="landing_row--word hidden">E</span>
+                    <span class="landing_row--word dark-gray">0</span>
+                </div>
             </div>
         </section>
-
-        <div class="media-icons">
-            <div class="media-icons--group">
-                <a href="https://www.linkedin.com/in/jonkwee" target="_blank">
-                    <object data="img/linkedin.svg" class="media-icons--linkedin"></object>
-                </a>
-                <a href="https://www.github.com/jonkwee" target="_blank">
-                    <object data="img/github.svg" class="media-icons--github"></object>
-                </a>
-            </div>
-        </div>
-
-
-        <!--Second section-->
-        <section class="about" id="about">
-            <div class="about__content">
-                <h2 class="about__content--title">Get to know me!</h2>
-                <p class="about__content--description">
-                    I am a software engineer working for Acxiom located in Conway, Arkansas.
-                    I have 4+ years of industry experience in backend development and around 1 year of experience in frontend development.
-                    My life mainly consists of spending time with my <span class="descriptor--link">family</span>,
-                    learning various <span class="descriptor--link">programming</span> theories and techniques, listening to
-                    <span class="descriptor--link">music</span> and immersing myself in story-rich 
-                    <span class="descriptor--link">games</span>.
-                </p>
-            </div>
-        </section>
-
-        <script src="js/observers.js" type="text/javascript"></script>
     </body>
 </html>
 
