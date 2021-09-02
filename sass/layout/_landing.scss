@@ -8,15 +8,16 @@
   &_row {
     display: flex;
     justify-content: space-evenly;
+    height: 100%;
 
     &--container {
       position: relative;
+      width: 17%;
     }
 
     &--word {
-      display: inline-block;
+      display: block;
       position: absolute;
-      transform: translate(-50%, -50%);
     }
   }
 
