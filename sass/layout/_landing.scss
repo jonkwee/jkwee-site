@@ -3,16 +3,20 @@
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
 
   &_row {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    align-items: center;
     height: 100%;
 
     &--container {
-      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       width: 17%;
+      height: 100%;
     }
 
     &--word {

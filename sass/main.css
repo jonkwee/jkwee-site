@@ -82,16 +82,20 @@ body {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 .landing_row {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  align-items: center;
   height: 100%;
 }
 .landing_row--container {
-  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 17%;
+  height: 100%;
 }
 .landing_row--word {
   display: block;
