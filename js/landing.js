@@ -26,6 +26,7 @@ function rotateWords() {
         mainSection.classList.remove("hidden");
         mainSection.scrollIntoView();
     }, 4500);
+
 }
 
 function shuffleArray(array) {
