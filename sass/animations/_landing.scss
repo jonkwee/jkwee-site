@@ -29,3 +29,8 @@
   animation: rotate-outward 1s 2s backwards;
 }
 
+.move-up {
+  transform: translateY(-100vh);
+  transition: all 1.5s ease-in;
+}
+

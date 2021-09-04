@@ -7,14 +7,9 @@ body {
     font-weight: 700;
 }
 
-.about_title {
-    font-size: 1.8rem;
-    font-family: "Roboto Mono", sans-serif;
-    text-decoration: underline;
-}
-
 .navbar {
     &_title {
+        font-family: "Roboto Mono", sans-serif;
         font-size: 2.4rem;
         font-weight: 700;
         text-transform: uppercase;
@@ -28,6 +23,32 @@ body {
 
         &--element a {
             letter-spacing: 0.2rem;
+        }
+    }
+}
+
+.about {
+    &_title {
+        font-size: 1.8rem;
+        font-family: "Roboto Mono", sans-serif;
+        font-weight: 700;
+        letter-spacing: 0.1rem;
+        text-decoration: underline;
+    }
+
+    &_content {
+        font-size: 3.6rem;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 500;
+        color: var(--color-dark-background);
+
+        & a {
+            text-decoration: none;
+            color: #3276D9;
+
+            &:active, &:hover, &:link, &:visited {
+                text-decoration: none;
+            }
         }
     }
 }

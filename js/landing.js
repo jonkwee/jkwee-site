@@ -24,7 +24,7 @@ function rotateWords() {
     setTimeout(() => {
         const mainSection = document.getElementById("scroll-target");
         mainSection.classList.remove("hidden");
-        mainSection.scrollIntoView();
+        document.getElementById("translate-up").classList.add("move-up");
     }, 4500);
 
 }
