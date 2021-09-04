@@ -20,6 +20,12 @@ function rotateWords() {
             rotateOutElement.classList.remove("hidden");
         }, 100 * i);
     }
+
+    setTimeout(() => {
+        const mainSection = document.getElementById("scroll-target");
+        mainSection.classList.remove("hidden");
+        mainSection.scrollIntoView();
+    }, 4500);
 }
 
 function shuffleArray(array) {

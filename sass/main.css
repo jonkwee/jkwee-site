@@ -54,6 +54,7 @@ body {
 
 .hidden {
   opacity: 0;
+  display: none;
 }
 
 body {
@@ -63,6 +64,12 @@ body {
 .landing_row--word {
   font-size: var(--text-size-landing);
   font-weight: bold;
+}
+
+.about_title {
+  font-size: 1.8rem;
+  font-family: "Roboto Mono", sans-serif;
+  text-decoration: underline;
 }
 
 .light-gray {
@@ -96,6 +103,27 @@ body {
 .landing_row--word {
   display: block;
   position: absolute;
+}
+
+.about {
+  height: 60vh;
+  display: flex;
+}
+
+.skills {
+  height: 80vh;
+}
+
+.selfdevelopment {
+  height: 50vh;
+}
+
+.projects {
+  height: 50vh;
+}
+
+.contact {
+  height: 40vh;
 }
 
 /*# sourceMappingURL=main.css.map */
