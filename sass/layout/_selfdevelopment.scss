@@ -1,3 +1,26 @@
 .selfdevelopment {
-  height: 50vh;
+  height: 40vh;
+  margin: 0 4rem;
+
+  &_title {
+    display: flex;
+    align-items: center;
+    margin: 2rem 0;
+
+    &--text {
+      margin-left: 1rem;
+      padding: 5px 20px;
+      background-color: var(--color-dark-background);
+      border-radius: 6px;
+      text-align: center;
+    }
+  }
+
+  &_content {
+    width: 60%;
+
+    & p {
+      line-height: 30px;
+    }
+  }
 }
