@@ -1,3 +1,61 @@
 .skills {
   height: 80vh;
+  margin: 0 4rem;
+
+  &_title {
+    display: flex;
+    align-items: center;
+
+    &--text {
+      margin-left: 1rem;
+      padding: 5px 20px;
+      background-color: var(--color-dark-background);
+      border-radius: 6px;
+      text-align: center;
+    }
+  }
+
+  &_content {
+    display: flex;
+
+    & div:last-child {
+      margin-left: 12rem;
+    }
+
+    &--timeline {
+      &-title {
+        margin: 2rem 0;
+      }
+
+      &-list {
+        position: relative;
+
+        &::before {
+          content: '';
+          position: absolute;
+          height: 100%;
+          width: 2px;
+          background-color: var(--color-dark-background);
+        }
+
+        & li {
+          list-style: none;
+          margin: 20px;
+          position: relative;
+
+          &::before {
+            content: '';
+            position: absolute;
+            height: 10px;
+            width: 10px;
+            background-color: var(--color-dark-background);
+            border-radius: 50%;
+            transform: translate(-50%, 50%);
+            left: -19px;
+          }
+        }
+      }
+
+    }
+  }
 }

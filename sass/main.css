@@ -112,6 +112,21 @@ body {
   text-decoration: none;
 }
 
+.skills_title--text {
+  color: white;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+.skills_content {
+  font-size: 1.4rem;
+}
+.skills_content--timeline-title {
+  font-weight: 700;
+}
+.skills_content--timeline-list {
+  font-weight: 400;
+}
+
 .light-gray {
   color: var(--color-light-gray-text);
 }
@@ -195,6 +210,52 @@ body {
 
 .skills {
   height: 80vh;
+  margin: 0 4rem;
+}
+.skills_title {
+  display: flex;
+  align-items: center;
+}
+.skills_title--text {
+  margin-left: 1rem;
+  padding: 5px 20px;
+  background-color: var(--color-dark-background);
+  border-radius: 6px;
+  text-align: center;
+}
+.skills_content {
+  display: flex;
+}
+.skills_content div:last-child {
+  margin-left: 12rem;
+}
+.skills_content--timeline-title {
+  margin: 2rem 0;
+}
+.skills_content--timeline-list {
+  position: relative;
+}
+.skills_content--timeline-list::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 2px;
+  background-color: var(--color-dark-background);
+}
+.skills_content--timeline-list li {
+  list-style: none;
+  margin: 20px;
+  position: relative;
+}
+.skills_content--timeline-list li::before {
+  content: "";
+  position: absolute;
+  height: 10px;
+  width: 10px;
+  background-color: var(--color-dark-background);
+  border-radius: 50%;
+  transform: translate(-50%, 50%);
+  left: -19px;
 }
 
 .selfdevelopment {
