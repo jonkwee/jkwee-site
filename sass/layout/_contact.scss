@@ -1,3 +1,23 @@
 .contact {
-  height: 40vh;
+  height: 30vh;
+  background-color: var(--color-dark-background);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 4rem;
+
+  &_title {
+    text-decoration: underline;
+    letter-spacing: 0.1rem;
+    margin-bottom: 2rem;
+  }
+
+  &_content {
+    width: 55%;
+
+    & a {
+      text-decoration: none;
+      color: #3276D9;
+    }
+  }
 }

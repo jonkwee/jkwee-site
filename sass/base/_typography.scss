@@ -84,6 +84,21 @@ body {
     }
 }
 
+.contact {
+    color: white;
+
+    &_title {
+        font-family: "Roboto Mono", sans-serif;
+        font-weight: 700;
+        font-size: 1.8rem;
+    }
+
+    &_content {
+        font-weight: 500;
+        font-size: 3.6rem;
+    }
+}
+
 
 
 
