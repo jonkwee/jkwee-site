@@ -1,0 +1,11 @@
+@import "./variables"; 
+@import "./base";
+@import "./typography";
+@import "./animations";
+
+@import "../components/About/about";
+@import "../components/Contact/contact";
+@import "../components/Landing/landing";
+@import "../components/Navbar/navbar";
+@import "../components/SelfDevelopment/selfdevelopment";
+@import "../components/Skills/skills";

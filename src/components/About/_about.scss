@@ -1,0 +1,15 @@
+.about {
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 4rem;
+  
+    &_title {
+      margin: 4rem 0;
+    }
+  
+    &_content {
+      width: 55%;
+    }
+  }
