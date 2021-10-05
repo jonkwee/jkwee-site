@@ -5,9 +5,9 @@ import Skills from '../Skills/Skills'
 import SelfDevelopment from '../SelfDevelopment/SelfDevelopment'
 import Contact from '../Contact/Contact'
 
-function Main() {
+function Main({scrollTargetRef}) {
     return (
-        <section className="main hidden" id="scroll-target">
+        <section className="main hidden" ref={scrollTargetRef}>
             <Navbar />
             <About />
             <Skills />

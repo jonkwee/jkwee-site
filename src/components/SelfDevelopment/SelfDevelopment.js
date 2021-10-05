@@ -1,10 +1,12 @@
 import React from 'react'
+import selfDevelopmentIcon from '../../img/selfdevelopment.svg'
 
 function SelfDevelopment() {
     return (
         <div className="selfdevelopment">
             <div className="selfdevelopment_title">
-                <object data="../../img/selfdevelopment.svg" width="24px" height="25px"></object>
+                <object data={selfDevelopmentIcon} aria-label="Self-Development icon"
+                    width="24px" height="25px"></object>
                 <h1 className="selfdevelopment_title--text">Self-Development</h1>
             </div>
 

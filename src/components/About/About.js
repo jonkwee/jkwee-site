@@ -1,5 +1,7 @@
 import React from 'react'
 
+import sideBackgroundImage from '../../img/sidebackground.svg'
+
 function About() {
     return (
         <div className="about" id="about">
@@ -9,7 +11,8 @@ function About() {
                 Java using Spring Framework. I’m currently creating great things at
                 <a href="https://www.acxiom.com" target="_blank" rel="noopener noreferrer">Acxiom</a>.
             </p>
-            <object id="sidebackground" data="../../img/sidebackground.svg" width="814" height="291"></object>
+            <object id="sidebackground" aria-label="background image" 
+                data={sideBackgroundImage} width="814" height="291"></object>
         </div>
     )
 }

@@ -1,10 +1,13 @@
 import React from 'react'
 
+import skillsIcon from '../../img/skills.svg'
+
 function Skills() {
     return (
         <div className="skills">
             <div className="skills_title">
-                <object data="../../img/skills.svg" width="23px" height="26px"></object>
+                <object data={skillsIcon} aria-label="Skills icon" 
+                    width="23px" height="26px"></object>
                 <h1 className="skills_title--text">Skills</h1>
             </div>
             <div className="skills_content">
