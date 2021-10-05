@@ -3,8 +3,9 @@ import LandingRow from "./LandingRow"
 
 
 class Landing extends Component {
-    constructor({scrollTargetRef}) {
+    constructor({showMainSectionFunc}) {
         super()
+
         this.state = {
             rowData: [
                 {
@@ -71,6 +72,8 @@ class Landing extends Component {
         }
 
         this.updateRowData.bind(this)
+        this.showMainSectionFunc = showMainSectionFunc;
+        this.showMainSectionFunc.bind(this)
     }
 
     shuffleArray(array) {
@@ -107,12 +110,9 @@ class Landing extends Component {
         this.shuffleArray(indexMask);
         this.updateRowData(0, indexMask);
 
-        // setTimeout(() => {
-        //     const mainSection = ReactDOM.findDOMNode(this.scrollTargetRef.current);
-        //     console.log("HERE", mainSection);
-        //     mainSection.classList.remove("hidden");
-        //     document.getElementById("translate-up").classList.add("move-up");
-        // }, 4500);
+        setTimeout(() => {
+            this.showMainSectionFunc()
+        }, 6000)
     }
 
     render() {

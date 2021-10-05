@@ -1,14 +1,20 @@
-import { useRef } from 'react';
+import { useState } from 'react'
+ 
 import './App.css';
 import Landing from './components/Landing/Landing';
 import Main from "./components/Main/Main";
 
 function App() {
-  const scrollTargetRef = useRef()
+  const [showMain, isShowMain] = useState(false)
+
+  const updateShowMainSection = () => {
+    isShowMain(true)
+  }
+
   return (
     <div className="App">
-      <Landing scrollTargetRef={scrollTargetRef}/>
-      <Main scrollTargetRef={scrollTargetRef}/>
+      <Landing showMainSectionFunc={updateShowMainSection}/>
+      <Main shouldDisplay={showMain}/>
     </div>
   );
 }

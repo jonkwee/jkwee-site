@@ -29,8 +29,20 @@
     animation: rotate-outward 1s 2s backwards;
   }
   
-  .move-up {
-    transform: translateY(-100vh);
-    transition: all 1.5s ease-in;
+
+  @keyframes move-up {
+    0% {
+      transform: translateY(0)
+    }
+
+    100% {
+      transform: translateY(-100vh);
+    }
+
   }
+
+  .move-up {
+    animation: move-up 1.5s forwards;
+  }
+
   

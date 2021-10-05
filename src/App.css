@@ -128,12 +128,17 @@ body {
 .rotate-out {
   animation: rotate-outward 1s 2s backwards; }
 
+@keyframes move-up {
+  0% {
+    transform: translateY(0); }
+  100% {
+    transform: translateY(-100vh); } }
+
 .move-up {
-  transform: translateY(-100vh);
-  transition: all 1.5s ease-in; }
+  animation: move-up 1.5s forwards; }
 
 .about {
-  height: 60vh;
+  height: 50rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -144,7 +149,7 @@ body {
     width: 55%; }
 
 .contact {
-  height: 30vh;
+  height: 40rem;
   background-color: var(--color-dark-background);
   display: flex;
   flex-direction: column;
@@ -165,7 +170,8 @@ body {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center; }
+  justify-content: center;
+  z-index: -1; }
   .landing_row {
     display: flex;
     justify-content: center;
@@ -205,7 +211,7 @@ body {
           color: white; }
 
 .selfdevelopment {
-  height: 20vh;
+  height: 25rem;
   margin: 0 4rem; }
   .selfdevelopment_title {
     display: flex;
@@ -223,7 +229,7 @@ body {
       line-height: 30px; }
 
 .skills {
-  height: 40vh;
+  height: 70vh;
   margin: 0 4rem; }
   .skills_title {
     display: flex;
@@ -277,4 +283,4 @@ body {
 #sidebackground {
   position: absolute;
   right: 0;
-  transform: translateY(-100%); }
+  transform: translateY(-50%); }

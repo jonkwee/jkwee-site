@@ -1,10 +1,14 @@
 import React from 'react'
 
 import skillsIcon from '../../img/skills.svg'
+import sideBackgroundImage from '../../img/sidebackground.svg'
 
 function Skills() {
     return (
         <div className="skills">
+            <object id="sidebackground" aria-label="background image" 
+                data={sideBackgroundImage} width="814" height="291"></object>
+                
             <div className="skills_title">
                 <object data={skillsIcon} aria-label="Skills icon" 
                     width="23px" height="26px"></object>
