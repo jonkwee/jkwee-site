@@ -137,19 +137,21 @@ body {
 .move-up {
   animation: move-up 1.5s forwards; }
 
+.main {
+  height: 100vh; }
+
 .about {
-  height: 50rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 0 4rem; }
+  margin: 8rem 4rem; }
   .about_title {
-    margin: 4rem 0; }
+    margin: 2rem 0; }
   .about_content {
     width: 55%; }
 
 .contact {
-  height: 40rem;
+  height: 30vh;
   background-color: var(--color-dark-background);
   display: flex;
   flex-direction: column;
@@ -170,8 +172,7 @@ body {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  z-index: -1; }
+  justify-content: center; }
   .landing_row {
     display: flex;
     justify-content: center;
@@ -211,8 +212,7 @@ body {
           color: white; }
 
 .selfdevelopment {
-  height: 25rem;
-  margin: 0 4rem; }
+  margin: 8rem 4rem; }
   .selfdevelopment_title {
     display: flex;
     align-items: center;
@@ -229,8 +229,7 @@ body {
       line-height: 30px; }
 
 .skills {
-  height: 70vh;
-  margin: 0 4rem; }
+  margin: 8rem 4rem; }
   .skills_title {
     display: flex;
     align-items: center; }
