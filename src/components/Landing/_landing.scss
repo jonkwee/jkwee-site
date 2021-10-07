@@ -1,28 +1,14 @@
 .landing {
     background-color: var(--color-dark-background);
     height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  
-    &_row {
+
+    &_row--container {
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 100%;
-  
-      &--container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 17%;
-        height: 100%;
-      }
-  
-      &--word {
-        display: block;
-        position: absolute;
-      }
     }
-  
-  }
+
+    &_row--word {
+      position: absolute;
+    }
+}

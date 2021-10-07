@@ -169,24 +169,13 @@ body {
 
 .landing {
   background-color: var(--color-dark-background);
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center; }
-  .landing_row {
+  height: 100vh; }
+  .landing_row--container {
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 100%; }
-    .landing_row--container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 17%;
-      height: 100%; }
-    .landing_row--word {
-      display: block;
-      position: absolute; }
+    align-items: center; }
+  .landing_row--word {
+    position: absolute; }
 
 .navbar {
   height: 5vh;

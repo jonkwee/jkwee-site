@@ -1,5 +1,6 @@
+import { Box, Grid } from '@mui/material'
 import React, { Component } from 'react'
-import LandingRow from "./LandingRow"
+import LandingRowContainer from './LandingRowContainer'
 
 
 class Landing extends Component {
@@ -110,18 +111,16 @@ class Landing extends Component {
         this.shuffleArray(indexMask);
         this.updateRowData(0, indexMask);
 
-        setTimeout(() => {
-            this.showMainSectionFunc()
-        }, 6000)
+        // setTimeout(() => {
+        //     this.showMainSectionFunc()
+        // }, 6000)
     }
 
     render() {
         return (
-            <section className="landing">
-                <LandingRow rowData={this.state.rowData} startIndex={0} numberPerRow={4}/>
-                <LandingRow rowData={this.state.rowData} startIndex={4} numberPerRow={4}/>
-                <LandingRow rowData={this.state.rowData} startIndex={8} numberPerRow={4}/>
-            </section>
+            <Grid className="landing" container spacing={2}>
+                {this.state.rowData.map((d, i) => <LandingRowContainer key={i} content={d}/>)}
+            </Grid>
         )
     }
 }
