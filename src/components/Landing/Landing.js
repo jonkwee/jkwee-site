@@ -118,7 +118,7 @@ class Landing extends Component {
 
     render() {
         return (
-            <Grid className="landing" container spacing={2}>
+            <Grid className="landing" container>
                 {this.state.rowData.map((d, i) => <LandingRowContainer key={i} content={d}/>)}
             </Grid>
         )
