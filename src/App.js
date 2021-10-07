@@ -14,7 +14,7 @@ function App() {
   return (
     <div className="App">
       <Landing showMainSectionFunc={updateShowMainSection}/>
-      <Main shouldDisplay={showMain}/>
+      {/* <Main shouldDisplay={showMain}/> */}
     </div>
   );
 }
