@@ -143,9 +143,6 @@ body {
 .move-up {
   animation: move-up 1.5s forwards; }
 
-.main {
-  height: 100vh; }
-
 .about {
   display: flex;
   flex-direction: column;
@@ -274,8 +271,6 @@ body {
   .skills_content {
     display: flex;
     flex-wrap: wrap; }
-    .skills_content div:last-child {
-      margin-left: 12rem; }
     .skills_content--timeline-title {
       margin: 2rem 0; }
     .skills_content--timeline-list {
@@ -314,4 +309,6 @@ body {
 #sidebackground {
   position: absolute;
   right: 0;
-  transform: translateY(-50%); }
+  transform: translateY(-50%);
+  height: 814px;
+  width: 291px; }

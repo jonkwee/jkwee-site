@@ -19,8 +19,8 @@ function Main({shouldDisplay}) {
         <section className={`main ${shouldDisplay ? "" : "hidden"} ${scrollUp ? "move-up" : ""}`}>
             <Navbar />
             <About />
-            {/* <Skills />
-            <SelfDevelopment />
+            <Skills />
+            {/* <SelfDevelopment />
             <Contact /> */}
         </section>
     )
