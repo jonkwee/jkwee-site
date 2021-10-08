@@ -1,23 +1,28 @@
 .navbar {
-    height: 5vh;
     background-color: var(--color-dark-background);
-  
     display: flex;
+    justify-content: space-between;
   
     &_title {
-      margin: 0 4rem;
+      margin: 2rem 4rem;
       align-self: center;
-      flex: 0 0 58%;
     }
-  
+
+    &_menu {
+      display: flex;
+      margin-right: 2rem;
+
+    }
+
     &_list {
       display: flex;
-      flex: 0 0 40%;
+      margin-right: 2rem;
       justify-content: space-evenly;
       align-self: center;
   
       &--element {
         display: inline-block;
+        padding: 0 2rem;
   
         & a {
           text-decoration: none;
@@ -35,4 +40,24 @@
       }
     }
   
+  }
+
+  @media screen and (min-width: 650px) {
+    .navbar_list {
+      display: flex;
+    }
+
+    .navbar_menu {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 650px) {
+    .navbar_list {
+      display: none;
+    }
+
+    .navbar_menu {
+      display: flex;
+    }
   }
