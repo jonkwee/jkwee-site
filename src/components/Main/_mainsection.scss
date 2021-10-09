@@ -1,0 +1,12 @@
+.main {
+    position: absolute;
+    top: 0;
+    overflow: hidden;
+    transition: all 1s;
+    z-index: 2;
+}
+
+.hidden {
+    top: 100%;
+    height: 0;
+}

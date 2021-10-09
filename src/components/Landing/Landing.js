@@ -100,7 +100,7 @@ class Landing extends Component {
             }, () => {
                 setTimeout(() => {
                     this.updateRowData(index + 1, indexMask);
-                }, 50 * index)
+                }, 10 * index)
             })
         }
     }
@@ -111,9 +111,9 @@ class Landing extends Component {
         this.shuffleArray(indexMask);
         this.updateRowData(0, indexMask);
 
-        // setTimeout(() => {
-        //     this.showMainSectionFunc()
-        // }, 6000)
+        setTimeout(() => {
+            this.showMainSectionFunc()
+        }, 4500)
     }
 
     render() {

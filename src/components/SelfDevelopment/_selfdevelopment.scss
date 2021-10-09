@@ -1,5 +1,4 @@
 .selfdevelopment {
-    // height: 25rem;
     margin: 8rem 4rem;
   
     &_title {
@@ -22,5 +21,24 @@
       & p {
         line-height: 30px;
       }
+    }
+  }
+
+  @media screen and (min-width: 2560px) {
+    .selfdevelopment_content {
+      width: 20%;
+    }
+  }
+  
+  @media screen and (min-width: 1920px) and (max-width: 2560px) {
+    .selfdevelopment_content {
+      width: 40%;
+    }
+  }
+
+  @media screen and (max-width: 650px) {
+    .selfdevelopment_content {
+      font-size: 1.5rem;
+      width: 100%;
     }
   }
