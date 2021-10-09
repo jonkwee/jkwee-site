@@ -1,10 +1,9 @@
 .contact {
-    height: 30vh;
     background-color: var(--color-dark-background);
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 0 4rem;
+    padding: 4rem;
   
     &_title {
       text-decoration: underline;
@@ -21,3 +20,10 @@
       }
     }
   }
+
+@media screen and (max-width: 650px) {
+  .contact_content {
+    font-size: 2rem;
+    width: 100%;
+  }
+}

@@ -9,19 +9,19 @@ function Main({shouldDisplay}) {
 
     const [scrollUp, setScrollUp] = useState(false)
 
-    // useEffect(() => {
-    //     setTimeout(() => {
-    //         setScrollUp(true)
-    //     }, 1000)
-    // }, [shouldDisplay])
+    useEffect(() => {
+        setTimeout(() => {
+            setScrollUp(true)
+        }, 1000)
+    }, [shouldDisplay])
 
     return ( 
         <section className={`main ${shouldDisplay ? "" : "hidden"} ${scrollUp ? "move-up" : ""}`}>
             <Navbar />
-            {/* <About />
+            <About />
             <Skills />
             <SelfDevelopment />
-            <Contact /> */}
+            <Contact />
         </section>
     )
 }

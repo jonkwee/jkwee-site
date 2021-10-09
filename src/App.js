@@ -5,7 +5,7 @@ import Landing from './components/Landing/Landing';
 import Main from "./components/Main/Main";
 
 function App() {
-  const [showMain, isShowMain] = useState(true)
+  const [showMain, isShowMain] = useState(false)
 
   const updateShowMainSection = () => {
     isShowMain(true)
@@ -13,7 +13,7 @@ function App() {
 
   return (
     <div className="App">
-      {/* <Landing showMainSectionFunc={updateShowMainSection}/> */}
+      <Landing showMainSectionFunc={updateShowMainSection}/>
       <Main shouldDisplay={showMain}/>
     </div>
   );
