@@ -138,7 +138,7 @@ body {
   position: absolute;
   top: 0;
   overflow: hidden;
-  transition: all 1s;
+  transition: top 1s;
   z-index: 2;
   width: 100vw; }
 
