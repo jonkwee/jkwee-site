@@ -4,6 +4,7 @@ import About from '../About/About'
 import Skills from '../Skills/Skills'
 import SelfDevelopment from '../SelfDevelopment/SelfDevelopment'
 import Contact from '../Contact/Contact'
+// import StickySocialMedia from '../StickySocialMedia/StickySocialMedia'
 
 function Main({shouldDisplay}) {
 
@@ -17,6 +18,7 @@ function Main({shouldDisplay}) {
 
     return ( 
         <section className={`main ${shouldDisplay ? "" : "hidden"} ${scrollUp ? "move-up" : ""}`}>
+            {/* <StickySocialMedia /> */}
             <Navbar />
             <About />
             <Skills />
