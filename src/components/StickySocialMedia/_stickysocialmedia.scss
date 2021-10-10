@@ -1,0 +1,36 @@
+.sticky {
+    &_container {
+        position: fixed;
+        right: 0;
+        top: 50%;
+        background-color: var(--color-dark-background);
+
+        padding: 1rem;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 3;
+        transition: all 1s;
+        -webkit-transform:rotate(90deg);
+        -moz-transform:rotate(90deg);
+        -o-transform: rotate(90deg);
+        -ms-transform:rotate(90deg);
+        transform: rotate(90deg) translateY(-150%);
+    }
+
+    &_textcontent {
+        color: var(--color-medium-gray-text);
+        display: flex;
+        justify-content: center;
+    }
+
+    &_icon {
+        margin-left: 2rem;
+        transform: rotate(-90deg);
+    }
+}
+
+.hidden-side {
+    transform: rotate(90deg) translateY(-200%) translateY(-100%);
+}
