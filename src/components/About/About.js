@@ -8,7 +8,7 @@ function About() {
             <p className="about_content">
                 {`Hi, I am a Software Engineer specialising in developing RESTful services through
                 Java using Spring Framework. I’m currently creating great things at `}
-                <a href="https://www.acxiom.com" target="_blank" rel="noopener noreferrer">Acxiom</a>.
+                <a href="https://www.smarsh.com/" target="_blank" rel="noopener noreferrer">Smarsh</a>.
             </p>
         </div>
     )
